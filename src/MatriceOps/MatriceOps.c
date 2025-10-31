@@ -1,4 +1,4 @@
-#include "MatriceOps.h"
+#include "MatriceOps/MatriceOps.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
@@ -204,14 +204,14 @@ Matrice* inverseMat(Matrice* out_mat,const Matrice* mat)
     return out_mat;    
 }
 
-int main()
-{
-    double arr1[2][3] = {{1,2,3},{4,5,6}};
-    double arr2[4][4] = {{4,2,1,2},{7,8,6,4},{5,3,6,2},{1,4,2,3}};
-    double out[4][4] = {0};
-    Matrice mat1 = {2,3,(double*)arr1};
-    Matrice mat2 = {4,4,(double*)arr2};
-    Matrice out_mat = {4,4,(double*) out};
-    printMat(elwiseMultiply(&out_mat,&mat2,2));
-    return 0;
-}
+// int main()
+// {
+//     double arr1[2][3] = {{1,2,3},{4,5,6}};
+//     double arr2[4][4] = {{4,2,1,2},{7,8,6,4},{5,3,6,2},{1,4,2,3}};
+//     double out[4][4] = {0};
+//     Matrice mat1 = {2,3,(double*)arr1};
+//     Matrice mat2 = {4,4,(double*)arr2};
+//     Matrice out_mat = {4,4,(double*) out};
+//     printMat(elwiseMultiply(&out_mat,&mat2,2));
+//     return 0;
+// }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "MatriceOps.h"
+#include "MatriceOps/MatriceOps.h"
 
 #define     NUM_DOF          4 
 #define     G_ACC           9.81  
